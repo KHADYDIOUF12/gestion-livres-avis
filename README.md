@@ -28,9 +28,9 @@ Chaque livre peut recevoir plusieurs avis. Les avis sont associés à des utilis
   - `published_at`: Date de publication
   - `timestamps`: Pour les champs `created_at` et `updated_at`
 - Commande : 
-  ```bash
+
   php artisan make:model Book -m
-````
+
 
 #### Modèle & Migration Avis
 
@@ -42,10 +42,8 @@ Chaque livre peut recevoir plusieurs avis. Les avis sont associés à des utilis
   * `comment`: Commentaire de l'utilisateur
   * `timestamps`: Pour les champs `created_at` et `updated_at`
 * Commande :
-
-  ```bash
   php artisan make:model Review -m
-  ```
+
 
   Utilisation de `foreignId(...)->constrained()` pour gérer les relations.
 
@@ -78,34 +76,31 @@ Chaque livre peut recevoir plusieurs avis. Les avis sont associés à des utilis
 ## Installation
 
 1. Clonez ce projet :
-
-   ```bash
+bash
    git clone https://github.com/KHADYDIOUF12/gestion-livres-avis.git
-   ```
+   
 
 2. Accédez au dossier du projet :
 
-   ```bash
    cd gestion-livres-avis
-   ```
+ 
 
 3. Installez les dépendances PHP avec Composer :
 
-   ```bash
    composer install
-   ```
+  
 
 6. Exécutez les migrations pour créer les tables dans la base de données :
 
-   ```bash
+   
    php artisan migrate
-   ```
+   
 
 7. Lancez le serveur de développement :
 
-   ```bash
+  
    php artisan serve
-   ```
+   
 
 8. Ouvrez votre navigateur et accédez à [http://localhost:8000](http://localhost:8000).
 
